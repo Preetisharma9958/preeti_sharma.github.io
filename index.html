@@ -3,15 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>JavaScript Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+  <title>Quiz Website</title>
 </head>
-<body>
-  <div class="quiz-container">
-    <h1>JavaScript Quiz</h1>
-    <div id="quiz"></div>
-    <button onclick="submitQuiz()"> Submit </button>
-  </div>
-  <script src="script.js"></script>
+
+<body background="q1.jpg" >
+
+<div id="quiz-container">
+  <h1>Quiz Time!</h1>
+  <div id="quiz" class="question"></div>
+  <ul class="options" id="options"></ul>
+  <button id="next-btn">Click for Next</button>
+  <div id="result"></div>
+  <div id="score"></div>
+  <a href="#" id="restart-btn" onclick="restartQuiz()">Restart Quiz</a>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
